@@ -1,0 +1,52 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+import javax.swing.event.*;
+
+public class Planets {
+    public static void main(String[] avg){
+    String name;
+    int planetNumber;
+    int numMoons;
+
+    public Planets(String name) {
+        this.name = "Earth";
+        this.planetNumber = 3;
+        this.numMoons = 1;
+    }
+
+    public Planets(String name) {
+        this.name = "Jupiter";
+        this.planetNumber = 8;
+        this.numMoons = 46;
+    }
+    
+    public Planets(String name) {
+        this.name = "Mars";
+        this.planetNumber = 2;
+        this.numMoons = 4;
+    }
+    
+    public Planets(String name) {
+        this.name = "Sun";
+        this.planetNumber = 0;
+        this.numMoons = 9;
+    }
+
+    public Planets(String name, int planetNumber, int numMoons) {
+        this.name = name;
+        this.planetNumber = planetNumber;
+        this.numMoons = numMoons;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void details() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Planet Number: " + this.planetNumber);
+        System.out.println("Number of Moons: " + this.numMoons);
+    }
+}
